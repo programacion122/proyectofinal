@@ -3,6 +3,7 @@ package Forms;
 import BO.UsuarioBO;
 import Ejmplo_combo.Conexion;
 import Ejmplo_combo.aa;
+import Ejmplo_combo.Mundo_noti;
 import ds.desktop.notify.DesktopNotify;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -217,8 +218,13 @@ public class frmPrincipal extends javax.swing.JFrame {
 
     private void JMnotifaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMnotifaActionPerformed
         
-        aa obj=new aa();
+        
+        
+        Mundo_noti obj=new Mundo_noti(this,true);
         obj.setVisible(true);
+        
+       /* aa obj=new aa();
+        obj.setVisible(true);*/
     }//GEN-LAST:event_JMnotifaActionPerformed
     
     private void login() {
